@@ -18,6 +18,7 @@
 		A30D55BF236FD8B000BFEB19 /* MFallingWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D55BE236FD8B000BFEB19 /* MFallingWordsTests.swift */; };
 		A30D55CA236FD8B000BFEB19 /* MFallingWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D55C9236FD8B000BFEB19 /* MFallingWordsUITests.swift */; };
 		A3239C56236FDE4300289335 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3239C55236FDE4200289335 /* SceneDelegate.swift */; };
+		A3267686236FE5D900D29398 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = A3267685236FE5D900D29398 /* words.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A30D55C9236FD8B000BFEB19 /* MFallingWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFallingWordsUITests.swift; sourceTree = "<group>"; };
 		A30D55CB236FD8B000BFEB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3239C55236FDE4200289335 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3267685236FE5D900D29398 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		AA6E50871567B87CD90383F1 /* Pods-MFallingWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsUITests/Pods-MFallingWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35E94FE8D38E9DB2D4EACE8 /* Pods-MFallingWordsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsTests/Pods-MFallingWordsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F792EB24EACCB17590583EEE /* Pods-MFallingWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWords.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWords/Pods-MFallingWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,13 +118,9 @@
 		A30D55A6236FD8AF00BFEB19 /* MFallingWords */ = {
 			isa = PBXGroup;
 			children = (
-				A3239C55236FDE4200289335 /* SceneDelegate.swift */,
-				A30D55A7236FD8AF00BFEB19 /* AppDelegate.swift */,
+				A3267682236FE46400D29398 /* App */,
+				A3267683236FE59A00D29398 /* ViewLayer */,
 				A30D55AB236FD8AF00BFEB19 /* ViewController.swift */,
-				A30D55AD236FD8AF00BFEB19 /* Main.storyboard */,
-				A30D55B0236FD8B000BFEB19 /* Assets.xcassets */,
-				A30D55B2236FD8B000BFEB19 /* LaunchScreen.storyboard */,
-				A30D55B5236FD8B000BFEB19 /* Info.plist */,
 			);
 			path = MFallingWords;
 			sourceTree = "<group>";
@@ -143,6 +141,43 @@
 				A30D55CB236FD8B000BFEB19 /* Info.plist */,
 			);
 			path = MFallingWordsUITests;
+			sourceTree = "<group>";
+		};
+		A3267682236FE46400D29398 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A30D55B5236FD8B000BFEB19 /* Info.plist */,
+				A3239C55236FDE4200289335 /* SceneDelegate.swift */,
+				A30D55A7236FD8AF00BFEB19 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A3267683236FE59A00D29398 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A3267687236FE5F800D29398 /* Layout */,
+				A3267684236FE5BC00D29398 /* Resources */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		A3267684236FE5BC00D29398 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3267685236FE5D900D29398 /* words.json */,
+				A30D55B0236FD8B000BFEB19 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3267687236FE5F800D29398 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				A30D55AD236FD8AF00BFEB19 /* Main.storyboard */,
+				A30D55B2236FD8B000BFEB19 /* LaunchScreen.storyboard */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		B41EAEA8E05F3ECFEEAF37D4 /* Frameworks */ = {
@@ -277,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A30D55B4236FD8B000BFEB19 /* LaunchScreen.storyboard in Resources */,
+				A3267686236FE5D900D29398 /* words.json in Resources */,
 				A30D55B1236FD8B000BFEB19 /* Assets.xcassets in Resources */,
 				A30D55AF236FD8AF00BFEB19 /* Main.storyboard in Resources */,
 			);
@@ -575,7 +611,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MFallingWords/Info.plist;
+				INFOPLIST_FILE = MFallingWords/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -593,7 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = MFallingWords/Info.plist;
+				INFOPLIST_FILE = MFallingWords/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
