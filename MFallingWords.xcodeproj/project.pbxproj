@@ -34,6 +34,10 @@
 		A32676B1236FF7C200D29398 /* Collections+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676B0236FF7C200D29398 /* Collections+Extras.swift */; };
 		A32676B4236FF9B400D29398 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676B3236FF9B400D29398 /* ProgressBarView.swift */; };
 		A32676B6236FFC0000D29398 /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676B5236FFC0000D29398 /* PointsView.swift */; };
+		A32676BB23700A5500D29398 /* XCTest+Eventually.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676BA23700A5500D29398 /* XCTest+Eventually.swift */; };
+		A32676BF23700A9600D29398 /* MockGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676BE23700A9600D29398 /* MockGameService.swift */; };
+		A32676C123700AB600D29398 /* MockGameViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676C023700AB600D29398 /* MockGameViewIO.swift */; };
+		A32676C323700B3D00D29398 /* GameViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676C223700B3D00D29398 /* GameViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		A32676B0236FF7C200D29398 /* Collections+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collections+Extras.swift"; sourceTree = "<group>"; };
 		A32676B3236FF9B400D29398 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		A32676B5236FFC0000D29398 /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		A32676BA23700A5500D29398 /* XCTest+Eventually.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTest+Eventually.swift"; sourceTree = "<group>"; };
+		A32676BE23700A9600D29398 /* MockGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameService.swift; sourceTree = "<group>"; };
+		A32676C023700AB600D29398 /* MockGameViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGameViewIO.swift; sourceTree = "<group>"; };
+		A32676C223700B3D00D29398 /* GameViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModelTests.swift; sourceTree = "<group>"; };
 		AA6E50871567B87CD90383F1 /* Pods-MFallingWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsUITests/Pods-MFallingWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35E94FE8D38E9DB2D4EACE8 /* Pods-MFallingWordsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsTests/Pods-MFallingWordsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F792EB24EACCB17590583EEE /* Pods-MFallingWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWords.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWords/Pods-MFallingWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,10 +156,10 @@
 		A30D55A6236FD8AF00BFEB19 /* MFallingWords */ = {
 			isa = PBXGroup;
 			children = (
-				A326768E236FE94E00D29398 /* DataLayer */,
-				A3267688236FE76B00D29398 /* ModelLayer */,
 				A3267682236FE46400D29398 /* App */,
 				A3267683236FE59A00D29398 /* ViewLayer */,
+				A326768E236FE94E00D29398 /* DataLayer */,
+				A3267688236FE76B00D29398 /* ModelLayer */,
 			);
 			path = MFallingWords;
 			sourceTree = "<group>";
@@ -159,7 +167,10 @@
 		A30D55BD236FD8B000BFEB19 /* MFallingWordsTests */ = {
 			isa = PBXGroup;
 			children = (
+				A32676BD23700A7700D29398 /* Mocks */,
+				A32676BC23700A6F00D29398 /* UserStories */,
 				A30D55BE236FD8B000BFEB19 /* MFallingWordsTests.swift */,
+				A32676BA23700A5500D29398 /* XCTest+Eventually.swift */,
 				A30D55C0236FD8B000BFEB19 /* Info.plist */,
 			);
 			path = MFallingWordsTests;
@@ -327,6 +338,23 @@
 				A30D55AB236FD8AF00BFEB19 /* GameViewController.swift */,
 			);
 			path = UserStories;
+			sourceTree = "<group>";
+		};
+		A32676BC23700A6F00D29398 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				A32676C223700B3D00D29398 /* GameViewModelTests.swift */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		A32676BD23700A7700D29398 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A32676BE23700A9600D29398 /* MockGameService.swift */,
+				A32676C023700AB600D29398 /* MockGameViewIO.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		B41EAEA8E05F3ECFEEAF37D4 /* Frameworks */ = {
@@ -608,7 +636,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32676C323700B3D00D29398 /* GameViewModelTests.swift in Sources */,
 				A30D55BF236FD8B000BFEB19 /* MFallingWordsTests.swift in Sources */,
+				A32676BF23700A9600D29398 /* MockGameService.swift in Sources */,
+				A32676C123700AB600D29398 /* MockGameViewIO.swift in Sources */,
+				A32676BB23700A5500D29398 /* XCTest+Eventually.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
