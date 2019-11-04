@@ -26,6 +26,9 @@
 		A3267698236FEA3100D29398 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3267697236FEA3100D29398 /* GameService.swift */; };
 		A326769C236FEAD400D29398 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326769B236FEAD400D29398 /* DomainError.swift */; };
 		A326769E236FEAFE00D29398 /* ErrorCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326769D236FEAFE00D29398 /* ErrorCase.swift */; };
+		A32676A0236FEBF300D29398 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326769F236FEBF300D29398 /* Game.swift */; };
+		A32676A2236FEBF900D29398 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676A1236FEBF900D29398 /* Word.swift */; };
+		A32676A4236FEC0000D29398 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676A3236FEC0000D29398 /* Translation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		A3267697236FEA3100D29398 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
 		A326769B236FEAD400D29398 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		A326769D236FEAFE00D29398 /* ErrorCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCase.swift; sourceTree = "<group>"; };
+		A326769F236FEBF300D29398 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A32676A1236FEBF900D29398 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		A32676A3236FEC0000D29398 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		AA6E50871567B87CD90383F1 /* Pods-MFallingWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsUITests/Pods-MFallingWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35E94FE8D38E9DB2D4EACE8 /* Pods-MFallingWordsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsTests/Pods-MFallingWordsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F792EB24EACCB17590583EEE /* Pods-MFallingWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWords.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWords/Pods-MFallingWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +275,9 @@
 		A326769A236FEAC600D29398 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				A326769F236FEBF300D29398 /* Game.swift */,
+				A32676A1236FEBF900D29398 /* Word.swift */,
+				A32676A3236FEC0000D29398 /* Translation.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -532,7 +541,10 @@
 				A3267694236FE9D700D29398 /* LocalGameService.swift in Sources */,
 				A326768B236FE78600D29398 /* ViewModel.swift in Sources */,
 				A3267692236FE96900D29398 /* JSONWord.swift in Sources */,
+				A32676A4236FEC0000D29398 /* Translation.swift in Sources */,
+				A32676A2236FEBF900D29398 /* Word.swift in Sources */,
 				A3239C56236FDE4300289335 /* SceneDelegate.swift in Sources */,
+				A32676A0236FEBF300D29398 /* Game.swift in Sources */,
 				A326768D236FE79700D29398 /* ViewIO.swift in Sources */,
 				A326769C236FEAD400D29398 /* DomainError.swift in Sources */,
 				A326769E236FEAFE00D29398 /* ErrorCase.swift in Sources */,
