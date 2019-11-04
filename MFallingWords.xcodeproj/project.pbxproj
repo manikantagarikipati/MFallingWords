@@ -19,6 +19,13 @@
 		A30D55CA236FD8B000BFEB19 /* MFallingWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D55C9236FD8B000BFEB19 /* MFallingWordsUITests.swift */; };
 		A3239C56236FDE4300289335 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3239C55236FDE4200289335 /* SceneDelegate.swift */; };
 		A3267686236FE5D900D29398 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = A3267685236FE5D900D29398 /* words.json */; };
+		A326768B236FE78600D29398 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326768A236FE78600D29398 /* ViewModel.swift */; };
+		A326768D236FE79700D29398 /* ViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326768C236FE79700D29398 /* ViewIO.swift */; };
+		A3267692236FE96900D29398 /* JSONWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3267691236FE96900D29398 /* JSONWord.swift */; };
+		A3267694236FE9D700D29398 /* LocalGameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3267693236FE9D700D29398 /* LocalGameService.swift */; };
+		A3267698236FEA3100D29398 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3267697236FEA3100D29398 /* GameService.swift */; };
+		A326769C236FEAD400D29398 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326769B236FEAD400D29398 /* DomainError.swift */; };
+		A326769E236FEAFE00D29398 /* ErrorCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326769D236FEAFE00D29398 /* ErrorCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,13 @@
 		A30D55CB236FD8B000BFEB19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3239C55236FDE4200289335 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A3267685236FE5D900D29398 /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		A326768A236FE78600D29398 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A326768C236FE79700D29398 /* ViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIO.swift; sourceTree = "<group>"; };
+		A3267691236FE96900D29398 /* JSONWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWord.swift; sourceTree = "<group>"; };
+		A3267693236FE9D700D29398 /* LocalGameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalGameService.swift; sourceTree = "<group>"; };
+		A3267697236FEA3100D29398 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		A326769B236FEAD400D29398 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		A326769D236FEAFE00D29398 /* ErrorCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCase.swift; sourceTree = "<group>"; };
 		AA6E50871567B87CD90383F1 /* Pods-MFallingWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsUITests/Pods-MFallingWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35E94FE8D38E9DB2D4EACE8 /* Pods-MFallingWordsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsTests/Pods-MFallingWordsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F792EB24EACCB17590583EEE /* Pods-MFallingWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWords.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWords/Pods-MFallingWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +132,8 @@
 		A30D55A6236FD8AF00BFEB19 /* MFallingWords */ = {
 			isa = PBXGroup;
 			children = (
+				A326768E236FE94E00D29398 /* DataLayer */,
+				A3267688236FE76B00D29398 /* ModelLayer */,
 				A3267682236FE46400D29398 /* App */,
 				A3267683236FE59A00D29398 /* ViewLayer */,
 				A30D55AB236FD8AF00BFEB19 /* ViewController.swift */,
@@ -178,6 +194,83 @@
 				A30D55B2236FD8B000BFEB19 /* LaunchScreen.storyboard */,
 			);
 			path = Layout;
+			sourceTree = "<group>";
+		};
+		A3267688236FE76B00D29398 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A3267695236FEA1E00D29398 /* Domain */,
+				A3267689236FE77500D29398 /* Base */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		A3267689236FE77500D29398 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A326768A236FE78600D29398 /* ViewModel.swift */,
+				A326768C236FE79700D29398 /* ViewIO.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A326768E236FE94E00D29398 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				A3267690236FE95E00D29398 /* Local */,
+				A326768F236FE95700D29398 /* JSONEntity */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		A326768F236FE95700D29398 /* JSONEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A3267691236FE96900D29398 /* JSONWord.swift */,
+			);
+			path = JSONEntity;
+			sourceTree = "<group>";
+		};
+		A3267690236FE95E00D29398 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				A3267693236FE9D700D29398 /* LocalGameService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		A3267695236FEA1E00D29398 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A326769A236FEAC600D29398 /* Entity */,
+				A3267699236FEAC100D29398 /* Error */,
+				A3267696236FEA2700D29398 /* Services */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A3267696236FEA2700D29398 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A3267697236FEA3100D29398 /* GameService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3267699236FEAC100D29398 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A326769B236FEAD400D29398 /* DomainError.swift */,
+				A326769D236FEAFE00D29398 /* ErrorCase.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		A326769A236FEAC600D29398 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		B41EAEA8E05F3ECFEEAF37D4 /* Frameworks */ = {
@@ -436,7 +529,14 @@
 			files = (
 				A30D55AC236FD8AF00BFEB19 /* ViewController.swift in Sources */,
 				A30D55A8236FD8AF00BFEB19 /* AppDelegate.swift in Sources */,
+				A3267694236FE9D700D29398 /* LocalGameService.swift in Sources */,
+				A326768B236FE78600D29398 /* ViewModel.swift in Sources */,
+				A3267692236FE96900D29398 /* JSONWord.swift in Sources */,
 				A3239C56236FDE4300289335 /* SceneDelegate.swift in Sources */,
+				A326768D236FE79700D29398 /* ViewIO.swift in Sources */,
+				A326769C236FEAD400D29398 /* DomainError.swift in Sources */,
+				A326769E236FEAFE00D29398 /* ErrorCase.swift in Sources */,
+				A3267698236FEA3100D29398 /* GameService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
