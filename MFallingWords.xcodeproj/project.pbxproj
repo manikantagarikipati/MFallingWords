@@ -29,6 +29,8 @@
 		A32676A0236FEBF300D29398 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326769F236FEBF300D29398 /* Game.swift */; };
 		A32676A2236FEBF900D29398 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676A1236FEBF900D29398 /* Word.swift */; };
 		A32676A4236FEC0000D29398 /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676A3236FEC0000D29398 /* Translation.swift */; };
+		A32676A7236FF17E00D29398 /* GameViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676A6236FF17E00D29398 /* GameViewIO.swift */; };
+		A32676A9236FF18E00D29398 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32676A8236FF18E00D29398 /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		A326769F236FEBF300D29398 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A32676A1236FEBF900D29398 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		A32676A3236FEC0000D29398 /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		A32676A6236FF17E00D29398 /* GameViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewIO.swift; sourceTree = "<group>"; };
+		A32676A8236FF18E00D29398 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		AA6E50871567B87CD90383F1 /* Pods-MFallingWordsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsUITests/Pods-MFallingWordsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35E94FE8D38E9DB2D4EACE8 /* Pods-MFallingWordsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWordsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWordsTests/Pods-MFallingWordsTests.release.xcconfig"; sourceTree = "<group>"; };
 		F792EB24EACCB17590583EEE /* Pods-MFallingWords.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFallingWords.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFallingWords/Pods-MFallingWords.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 		A3267688236FE76B00D29398 /* ModelLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A32676A5236FF15B00D29398 /* UserStories */,
 				A3267695236FEA1E00D29398 /* Domain */,
 				A3267689236FE77500D29398 /* Base */,
 			);
@@ -280,6 +285,15 @@
 				A32676A3236FEC0000D29398 /* Translation.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		A32676A5236FF15B00D29398 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				A32676A6236FF17E00D29398 /* GameViewIO.swift */,
+				A32676A8236FF18E00D29398 /* GameViewModel.swift */,
+			);
+			path = UserStories;
 			sourceTree = "<group>";
 		};
 		B41EAEA8E05F3ECFEEAF37D4 /* Frameworks */ = {
@@ -539,6 +553,7 @@
 				A30D55AC236FD8AF00BFEB19 /* ViewController.swift in Sources */,
 				A30D55A8236FD8AF00BFEB19 /* AppDelegate.swift in Sources */,
 				A3267694236FE9D700D29398 /* LocalGameService.swift in Sources */,
+				A32676A9236FF18E00D29398 /* GameViewModel.swift in Sources */,
 				A326768B236FE78600D29398 /* ViewModel.swift in Sources */,
 				A3267692236FE96900D29398 /* JSONWord.swift in Sources */,
 				A32676A4236FEC0000D29398 /* Translation.swift in Sources */,
@@ -546,6 +561,7 @@
 				A3239C56236FDE4300289335 /* SceneDelegate.swift in Sources */,
 				A32676A0236FEBF300D29398 /* Game.swift in Sources */,
 				A326768D236FE79700D29398 /* ViewIO.swift in Sources */,
+				A32676A7236FF17E00D29398 /* GameViewIO.swift in Sources */,
 				A326769C236FEAD400D29398 /* DomainError.swift in Sources */,
 				A326769E236FEAFE00D29398 /* ErrorCase.swift in Sources */,
 				A3267698236FEA3100D29398 /* GameService.swift in Sources */,

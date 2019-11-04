@@ -44,6 +44,11 @@ class ViewModel<V: ViewIO> {
         //no op as of nothing much to do here
     }
     
+    /// Disposable builder
+    internal func disposable(_ disposables: Disposable?...) -> Disposable {
+        return Disposables.create(disposables.compactMap{ $0 })
+    }
+    
 }
 
 // Shortcut
